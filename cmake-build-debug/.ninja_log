@@ -1,0 +1,14 @@
+# ninja log v5
+4	585	6901363035327846	CMakeFiles/PrivNotes.dir/main.cpp.obj	1e852f319c5f651b
+585	754	6901363037033290	PrivNotes.exe	492ae91edb6f303f
+4	1007	6901362766236288	CMakeFiles/PrivNotes.dir/ExampleLib.cpp.obj	abf6153f1bc472ff
+6	1101	6901374730381880	CMakeFiles/PrivNotes.dir/main.cpp.obj	1e852f319c5f651b
+18	1143	6901374730940385	CMakeFiles/PrivNotes.dir/Cars.cpp.obj	41ceba95d70876d8
+1143	1332	6901374732766702	PrivNotes.exe	77b308f36cdb26e8
+3	678	6901376351003222	CMakeFiles/PrivNotes.dir/main.cpp.obj	1e852f319c5f651b
+678	924	6901376353376824	PrivNotes.exe	77b308f36cdb26e8
+5	934	6901389224764891	CMakeFiles/PrivNotes.dir/main.cpp.obj	1e852f319c5f651b
+15	973	6901389225273518	CMakeFiles/PrivNotes.dir/Cars.cpp.obj	41ceba95d70876d8
+974	1611	6901389231427162	PrivNotes.exe	77b308f36cdb26e8
+3	459	6901389442805894	CMakeFiles/PrivNotes.dir/Cars.cpp.obj	41ceba95d70876d8
+460	713	6901389445282114	PrivNotes.exe	77b308f36cdb26e8
