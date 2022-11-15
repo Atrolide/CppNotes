@@ -19,6 +19,20 @@ class ExampleLib {
             It's called encapsulation, we should use it as often as possible so to protect our code
             More about encapsulation below
     */
+
+    /*ENCAPSULATION
+      The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users.
+      We must declare class variables/attributes as private (cannot be accessed from outside the class).
+      If we want others to read or modify the value of a private member, we can provide public get and set methods.
+      Getter and Setter are public methods which use private variables
+      For get and set methods look at bookmarks below
+     */
+
+
+private:
+    //Private attribute for getter/setter
+    int salary;
+
 public:
     //BASIC METHOD DECLARATION (NO PARAMETERS)
     void myMethod();                //declaration of a method, we will define it in a cpp file and call it in a main func
@@ -26,8 +40,15 @@ public:
     //METHOD WITH PARAMETERS DECLARATION
     int myAge(int fage);
 
-private:
-    int x;
+
+    //Setter
+    void setSalary(int s) {
+        salary = s;
+    }
+    //Getter
+    int getSalary() {
+        return salary;
+    }
 };
 
 #endif //PRIVNOTES_EXAMPLELIB_H

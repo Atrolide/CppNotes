@@ -134,5 +134,10 @@ int main() {
     */
 
 
+    //ENCAPSULATION
+    ExampleLib myEmploee1;
+    myEmploee1.setSalary(5000);
+    std::cout<<myEmploee1.getSalary();
+
     return 0;
 }
