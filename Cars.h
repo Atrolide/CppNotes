@@ -9,6 +9,9 @@ public:
     std::string countryName;
     int yearFounded;
 
+    //CONSTRUCTOR WITH PARAMETERS - declaration
+    Cars(std::string brand, std::string country, int year);
+
     void carDescription();
 };
 

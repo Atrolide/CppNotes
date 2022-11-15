@@ -51,10 +51,14 @@ int main() {
 
     //PRACTICAL USE OF LIBRARIES -> CLASS 'Cars'
     //Assigning variables by hand:
-    Cars Volvo;
-    Cars BMW;
-    Cars Toyota;
-    Cars Fiat;
+    //Cars Volvo;
+    //Cars BMW;
+    //Cars Toyota;
+    //Cars Fiat;
+
+    /*
+       Declarations above and below had to be commented out,
+       after creating a constructor with parameters it generates an error
 
     //VOLVO
     Volvo.brandName = "Volvo";
@@ -81,10 +85,54 @@ int main() {
     Toyota.carDescription();
     Fiat.carDescription();
 
-    /*My dumb ass brain now needs to make a class with constructors/copy-constructors/deconstructors/etc
+
+     My dumb ass brain now needs to make a class with
+     constructors/copy-constructors/deconstructors/etc
      Then make a list of objects
      And that will be almost everything to pass an exam
      */
+
+
+    //ASSIGN VALUES BY A CONSTRUCTOR WITH PARAMETERS
+    Cars Volvo("Volvo", "Sweden", 1927);
+    Cars BMW("BMW", "Germany", 1916);
+    Cars Toyota("Toyota", "Japan", 1937);
+    Cars Fiat("Fiat", "Italy", 2007);
+
+    Volvo.carDescription();
+    BMW.carDescription();
+    Toyota.carDescription();
+    Fiat.carDescription();
+
+
+    Cars Test("Blank", "Blank", 69);
+    Test.carDescription();
+
+    //We can change every attribute of an object whenever we want:
+    Test.brandName = "Test";
+    Test.countryName = "San Escobar";
+    Test.yearFounded = 2137;
+    Test.carDescription();
+
+    //We can also change them using user's input
+    std::cout<<"Enter brand of your car: "<<std::endl;
+    std::cin>>Test.brandName;
+
+    std::cout<<"In which country was it founded? "<<std::endl;
+    std::cin>>Test.countryName;
+
+    std::cout<<"In which year was it founded? "<<std::endl;
+    std::cin>>Test.yearFounded;
+
+    Test.carDescription();
+
+    /*
+        But to make it work nicely we need to create a function in another class,
+        use constructors, copy constructors, deconstructors, etc.
+
+                    "めんどくせ"   ~ 奈良シカマル
+    */
+
 
     return 0;
 }
