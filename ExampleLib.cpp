@@ -11,7 +11,7 @@
 So:
 */
 void ExampleLib::myMethod() {
-    std::cout<<"Example of an outside definition!"<<std::endl;
+    std::cout << "Example of an outside definition!" << std::endl;
 }
 
 int ExampleLib::myAge(int fage) {

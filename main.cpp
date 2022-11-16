@@ -35,7 +35,9 @@ int main() {
 
     myObj1.descript();
 
-    std::cout<< "-------------------------------------------------------------------------------------------------------"<< std::endl;
+    std::cout
+            << "-------------------------------------------------------------------------------------------------------"
+            << std::endl;
 
     //USE OF OUTSIDE CLASSES (LIBRARIES)
 
@@ -47,7 +49,9 @@ int main() {
     //CALL OF AN OUTSIDE METHOD WITH PARAMETERS
     std::cout << "I'm " << exObj.myAge(22) << " years old." << std::endl;
 
-    std::cout<< "-------------------------------------------------------------------------------------------------------"<< std::endl;
+    std::cout
+            << "-------------------------------------------------------------------------------------------------------"
+            << std::endl;
 
     //PRACTICAL USE OF LIBRARIES -> CLASS 'Cars'
     //Assigning variables by hand:
@@ -115,14 +119,14 @@ int main() {
     Test.carDescription();
 
     //We can also change them using user's input
-    std::cout<<"Enter brand of your car: "<<std::endl;
-    std::cin>>Test.brandName;
+    std::cout << "Enter brand of your car: " << std::endl;
+    std::cin >> Test.brandName;
 
-    std::cout<<"In which country was it founded? "<<std::endl;
-    std::cin>>Test.countryName;
+    std::cout << "In which country was it founded? " << std::endl;
+    std::cin >> Test.countryName;
 
-    std::cout<<"In which year was it founded? "<<std::endl;
-    std::cin>>Test.yearFounded;
+    std::cout << "In which year was it founded? " << std::endl;
+    std::cin >> Test.yearFounded;
 
     Test.carDescription();
 
@@ -135,9 +139,9 @@ int main() {
 
 
     //ENCAPSULATION
-    ExampleLib myEmploee1;
-    myEmploee1.setSalary(5000);
-    std::cout<<myEmploee1.getSalary();
+    ExampleLib myEmployee1;
+    myEmployee1.setSalary(5000);
+    std::cout << "Employee's salary: " << myEmployee1.getSalary();
 
     return 0;
 }
