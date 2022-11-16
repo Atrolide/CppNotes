@@ -12,6 +12,8 @@ private:
     std::vector<std::string> customers;
     std::vector<int> hoursRented;
 
+    static int itr = 0;
+
 public:
     //DEFAULT CONSTRUCTOR DECLARATION
     CarData(std::string rNum, std::string cBrand);
@@ -39,6 +41,11 @@ public:
 
     //AVERAGE TIME DECLARATION
     double averageTime();
+
+    //GET RENTALS COUNT
+    static int getRentalsCount() {
+        return itr;
+    };
 
 };
 

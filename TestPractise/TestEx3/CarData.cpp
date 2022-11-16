@@ -1,7 +1,5 @@
 #include "CarData.h"
-
 #include <iostream>
-#include <vector>
 
 //DEFAULT CONSTRUCTOR DEFINITION
 CarData::CarData(std::string rNum, std::string cBrand) {
@@ -44,6 +42,7 @@ std::string CarData::getBrand() {
 void CarData::addRental(std::string customerName, int rentTime) {
     customers.push_back(customerName);
     hoursRented.push_back(rentTime);
+    itr +=1;
 }
 
 //REMOVE RENTAL DEFINITION
@@ -75,6 +74,8 @@ double CarData::averageTime() {
     avg = sum/hoursRented.size();
     return avg;
 }
+
+
 
 
 
