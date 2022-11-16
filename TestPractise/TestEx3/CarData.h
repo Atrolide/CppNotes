@@ -30,6 +30,16 @@ public:
 
     //BRAND GETTER DECLARATION
     std::string getBrand();
+
+    //ADD RENTAL METHOD DECLARATION
+    void addRental(std::string customerName, int rentTime);
+
+    //REMOVE RENTAL DECLARATION
+    void removeRental(std::string someCustomer);
+
+    //AVERAGE TIME DECLARATION
+    double averageTime();
+
 };
 
 

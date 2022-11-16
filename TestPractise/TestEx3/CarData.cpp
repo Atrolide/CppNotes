@@ -14,7 +14,7 @@ CarData::CarData(const CarData &someCar) {
     regNum = someCar.regNum;
     carBrand = someCar.carBrand;
 
-    for(int i = 0; i<someCar.customers.size(); i++) {
+    for (int i = 0; i < someCar.customers.size(); i++) {
         customers.push_back(someCar.customers[i]);
         hoursRented.push_back(someCar.hoursRented[i]);
     }
@@ -39,5 +39,43 @@ std::string CarData::getRegNum() {
 std::string CarData::getBrand() {
     return carBrand;
 }
+
+//ADD RENTAL METHOD DEFINITION
+void CarData::addRental(std::string customerName, int rentTime) {
+    customers.push_back(customerName);
+    hoursRented.push_back(rentTime);
+}
+
+//REMOVE RENTAL DEFINITION
+void CarData::removeRental(std::string someCustomer) {
+    bool checker = 0;
+    for(int i=0;i<customers.size();i++){
+        if(customers[i]==someCustomer){
+            checker=1;
+        }
+    }
+    if (checker == 0) std::cout << "\nno such customer has been found!\n";
+    else {
+        for(int i=0;i<customers.size();i++){
+            if(customers[i]==someCustomer){
+                customers.erase(customers.begin() + i);
+                hoursRented.erase(hoursRented.begin() + i);
+            }
+        }
+    }
+}
+
+//AVERAGE TIME DEFINITION
+double CarData::averageTime() {
+    double sum = 0;
+    double avg = 0;
+    for (int i = 0; i < hoursRented.size(); ++i) {
+        sum += hoursRented[i];
+    }
+    avg = sum/hoursRented.size();
+    return avg;
+}
+
+
 
 
