@@ -3,13 +3,13 @@
 #include <iostream>
 #include <vector>
 
-//default constructor definition
+//DEFAULT CONSTRUCTOR DEFINITION
 CarData::CarData(std::string rNum, std::string cBrand) {
     regNum = rNum;
     carBrand = cBrand;
 }
 
-//copy constructor definition
+//COPY CONSTRUCTOR DEFINITION
 CarData::CarData(const CarData &someCar) {
     regNum = someCar.regNum;
     carBrand = someCar.carBrand;
@@ -20,7 +20,7 @@ CarData::CarData(const CarData &someCar) {
     }
 }
 
-//destructor definition
+//DESTRUCTOR DEFINITION
 CarData::~CarData() {
     std::cout << regNum << " has been destroyed!" << std::endl;
 }

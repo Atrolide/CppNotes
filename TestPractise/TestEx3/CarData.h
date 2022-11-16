@@ -13,13 +13,13 @@ private:
     std::vector<int> hoursRented;
 
 public:
-    //default constructor declaration
+    //DEFAULT CONSTRUCTOR DECLARATION
     CarData(std::string rNum, std::string cBrand);
 
-    //copy constructor declaration
+    //COPY CONSTRUCTOR DECLARATION
     CarData(const CarData &someCar);
 
-    //destructor declaration
+    //DESTRUCTOR DECLARATION
     ~CarData();
 
 };
