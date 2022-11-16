@@ -25,4 +25,19 @@ CarData::~CarData() {
     std::cout << regNum << " has been destroyed!" << std::endl;
 }
 
+//REG NUM SETTER DEFINITION
+void CarData::setRegNum(std::string srNum) {
+    regNum = srNum;
+}
+
+//REG NUM GETTER DEFINITION
+std::string CarData::getRegNum() {
+    return regNum;
+}
+
+//BRAND GETTER DEFINITION
+std::string CarData::getBrand() {
+    return carBrand;
+}
+
 

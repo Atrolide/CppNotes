@@ -22,6 +22,14 @@ public:
     //DESTRUCTOR DECLARATION
     ~CarData();
 
+    //REG NUM SETTER DECLARATION
+    void setRegNum(std::string srNum);
+
+    //REG NUM GETTER DECLARATION
+    std::string getRegNum();
+
+    //BRAND GETTER DECLARATION
+    std::string getBrand();
 };
 
 
