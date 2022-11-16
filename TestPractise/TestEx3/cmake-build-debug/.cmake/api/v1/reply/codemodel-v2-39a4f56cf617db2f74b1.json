@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/Assignments/C++/OOP/TestPractise/TestEx3/cmake-build-debug",
-		"source" : "D:/Assignments/C++/OOP/TestPractise/TestEx3"
+		"build" : "D:/Assignments/C++/OOP/PrivNotes/TestPractise/TestEx3/cmake-build-debug",
+		"source" : "D:/Assignments/C++/OOP/PrivNotes/TestPractise/TestEx3"
 	},
 	"version" : 
 	{

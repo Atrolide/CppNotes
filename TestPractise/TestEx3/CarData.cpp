@@ -19,3 +19,10 @@ CarData::CarData(const CarData &someCar) {
         hoursRented.push_back(someCar.hoursRented[i]);
     }
 }
+
+//destructor definition
+CarData::~CarData() {
+    std::cout << regNum << " has been destroyed!" << std::endl;
+}
+
+

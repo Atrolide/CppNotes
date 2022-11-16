@@ -19,6 +19,9 @@ public:
     //copy constructor declaration
     CarData(const CarData &someCar);
 
+    //destructor declaration
+    ~CarData();
+
 };
 
 

@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/Assignments/C++/OOP/TestPractise/TestEx3/cmake-build-debug"
+			"value" : "d:/Assignments/C++/OOP/PrivNotes/TestPractise/TestEx3/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -623,7 +623,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Assignments/C++/OOP/TestPractise/TestEx3"
+			"value" : "D:/Assignments/C++/OOP/PrivNotes/TestPractise/TestEx3"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1239,7 +1239,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Assignments/C++/OOP/TestPractise/TestEx3/cmake-build-debug"
+			"value" : "D:/Assignments/C++/OOP/PrivNotes/TestPractise/TestEx3/cmake-build-debug"
 		},
 		{
 			"name" : "TestEx3_IS_TOP_LEVEL",
@@ -1263,7 +1263,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Assignments/C++/OOP/TestPractise/TestEx3"
+			"value" : "D:/Assignments/C++/OOP/PrivNotes/TestPractise/TestEx3"
 		}
 	],
 	"kind" : "cache",
