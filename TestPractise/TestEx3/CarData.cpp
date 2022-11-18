@@ -42,21 +42,20 @@ std::string CarData::getBrand() {
 void CarData::addRental(std::string customerName, int rentTime) {
     customers.push_back(customerName);
     hoursRented.push_back(rentTime);
-    itr +=1;
 }
 
 //REMOVE RENTAL DEFINITION
 void CarData::removeRental(std::string someCustomer) {
     bool checker = 0;
-    for(int i=0;i<customers.size();i++){
-        if(customers[i]==someCustomer){
-            checker=1;
+    for (int i = 0; i < customers.size(); i++) {
+        if (customers[i] == someCustomer) {
+            checker = 1;
         }
     }
     if (checker == 0) std::cout << "\nno such customer has been found!\n";
     else {
-        for(int i=0;i<customers.size();i++){
-            if(customers[i]==someCustomer){
+        for (int i = 0; i < customers.size(); i++) {
+            if (customers[i] == someCustomer) {
                 customers.erase(customers.begin() + i);
                 hoursRented.erase(hoursRented.begin() + i);
             }
@@ -71,9 +70,19 @@ double CarData::averageTime() {
     for (int i = 0; i < hoursRented.size(); ++i) {
         sum += hoursRented[i];
     }
-    avg = sum/hoursRented.size();
+    avg = sum / hoursRented.size();
     return avg;
 }
+
+//< OPERATOR OVERLOAD IN .CPP
+bool CarData::operator<(CarData someCar) {
+    true = "";
+    if (this->hoursRented.size() < someCar.hoursRented.size())  return true;
+    else return false;
+}
+
+
+
 
 
 

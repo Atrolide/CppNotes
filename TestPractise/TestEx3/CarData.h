@@ -1,5 +1,6 @@
 #ifndef TESTEX3_CARDATA_H
 #define TESTEX3_CARDATA_H
+
 #include <iostream>
 #include <vector>
 
@@ -11,8 +12,6 @@ private:
 
     std::vector<std::string> customers;
     std::vector<int> hoursRented;
-
-    static int itr = 0;
 
 public:
     //DEFAULT CONSTRUCTOR DECLARATION
@@ -42,12 +41,8 @@ public:
     //AVERAGE TIME DECLARATION
     double averageTime();
 
-    //GET RENTALS COUNT
-    static int getRentalsCount() {
-        return itr;
-    };
-
+    //< OPERATOR OVERLOAD IN .H
+    bool operator<(CarData);
 };
-
 
 #endif //TESTEX3_CARDATA_H

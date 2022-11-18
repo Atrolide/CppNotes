@@ -3,24 +3,23 @@
 
 int main() {
 
-    std::cout<< "Number of total rents: " <<CarData::getRentalsCount()<<std::endl;
-
-    CarData BMW("EZG2137", "e36");
+    CarData BMW("EZG2137", "BMW E36");
+    CarData Toyota("EL12345", "Toyota Corolla");
 
     BMW.addRental("Karol Wojtyla", 4);
     BMW.addRental("Karol Wojtyla", 1);
-
-    std::cout<< "Number of total rents: " <<CarData::getRentalsCount()<<std::endl;
-
     BMW.addRental("Karol Wojtyla", 2);
     BMW.addRental("Karol Wojtyla", 3);
 
-    std::cout<< "Number of total rents: " <<CarData::getRentalsCount()<<std::endl;
+    Toyota.addRental("Papaj",  5);
+    Toyota.addRental("Papaj", 3);
 
     std::cout << BMW.averageTime() << std::endl;
+    std::cout << Toyota.averageTime() << std::endl;
 
-
-
+   if(Toyota < BMW) {
+        std::cout << Toyota.getBrand() << " is used less often than " << BMW.getBrand() << std::endl;
+   }
 
     return 0;
 }
