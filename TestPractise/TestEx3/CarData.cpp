@@ -76,7 +76,6 @@ double CarData::averageTime() {
 
 //< OPERATOR OVERLOAD IN .CPP
 bool CarData::operator<(CarData someCar) {
-    true = "";
     if (this->hoursRented.size() < someCar.hoursRented.size())  return true;
     else return false;
 }
