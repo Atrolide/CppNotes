@@ -42,6 +42,7 @@ std::string CarData::getBrand() {
 void CarData::addRental(std::string customerName, int rentTime) {
     customers.push_back(customerName);
     hoursRented.push_back(rentTime);
+
 }
 
 //REMOVE RENTAL DEFINITION
@@ -66,7 +67,7 @@ void CarData::removeRental(std::string someCustomer) {
 //AVERAGE TIME DEFINITION
 double CarData::averageTime() {
     double sum = 0;
-    double avg = 0;
+    double avg;
     for (int i = 0; i < hoursRented.size(); ++i) {
         sum += hoursRented[i];
     }
@@ -74,11 +75,37 @@ double CarData::averageTime() {
     return avg;
 }
 
-//< OPERATOR OVERLOAD IN .CPP
-bool CarData::operator<(CarData someCar) {
-    if (this->hoursRented.size() < someCar.hoursRented.size())  return true;
+//< OPERATOR OVERLOAD DEFINITION
+bool CarData::operator<(const CarData &someCar) {
+    if (this->hoursRented.size() < someCar.hoursRented.size()) return true;
     else return false;
 }
+
+//INDEXING OPERATOR OVERLOAD DEFINITION
+int &CarData::operator[](int subscript) {
+    if (subscript > hoursRented.size()) {
+        throw std::out_of_range("Out of range expression!");
+    } else
+        return hoursRented[subscript - 1];
+}
+
+//SHIFT OPERATOR OVERLOADING DEFINITION
+std::ostream &operator<<(std::ostream &result, const CarData &someCar) {
+    int iterator = 0;
+    result << "Car: " << someCar.carBrand << " " << someCar.regNum << "\n";
+    for (int i = 0; i < someCar.customers.size(); i++) {
+        result << i + 1 << ". " << someCar.customers[i] << ", " << someCar.hoursRented[i] << "\n";
+        iterator += someCar.hoursRented[i];
+    }
+    result << "Total time: " << iterator << " hours\n";
+    return result;
+}
+
+
+
+
+
+
 
 
 

@@ -41,8 +41,14 @@ public:
     //AVERAGE TIME DECLARATION
     double averageTime();
 
-    //< OPERATOR OVERLOAD IN .H
-    bool operator<(CarData);
+    //< OPERATOR OVERLOAD DECLARATION
+    bool operator<(const CarData &);
+
+    //INDEXING OPERATOR OVERLOAD DECLARATION
+    int &operator[](int subscript);
+
+    //SHIFT OPERATOR OVERLOADING DECLARATION
+    friend std::ostream &operator<<(std::ostream &, const CarData &);
 };
 
 #endif //TESTEX3_CARDATA_H
