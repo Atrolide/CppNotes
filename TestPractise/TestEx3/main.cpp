@@ -6,7 +6,6 @@ int main() {
     CarData BMW("EZG1337", "BMW E36");
     CarData Toyota("EL12345", "Toyota Corolla");
 
-
     BMW.addRental("Customer One", 4);
     BMW.addRental("Customer Two", 1);
     BMW.addRental("Customer Three", 2);
@@ -21,7 +20,7 @@ int main() {
     std::cout << BMW.getRegNum() << std::endl;
 
     std::cout << "BMW rent time on position is: " << BMW.operator[](5) << std::endl;
-    std::cout << "Toyota rent time on position is: " << Toyota.operator[](2) << std::endl;
+    std::cout << "Toyota rent time on position is: " << Toyota.operator[](20) << std::endl;
 
     std::cout << "\n";
 

@@ -8,7 +8,6 @@
 class ConsumerOrder {
 
 private:
-    static int total;
     std::string customerName;
     std::vector<std::string> dishName;
     std::vector<int> dishPrice;
@@ -19,11 +18,33 @@ public:
     ~ConsumerOrder();
 
     void setCustomer(std::string cName);
+
     std::string getCustomer();
+
     void addDish(std::string dName, int dPrice);
     void removeDish(std::string someDish);
+
     int length();
-    bool operator>(const ConsumerOrder &someDish)
+    int getTotalPrice() const;
+
+    bool operator>(const ConsumerOrder &someDish);
+    int &operator[](int subscript);
+    friend std::ostream &operator<<(std::ostream &result, const ConsumerOrder &someCustomer);
+
+
+
 };
 
 #endif //TESTEX1_CONSUMERORDER_H
+
+
+/*
+
+bool operator<(const order& inOrder){
+    return getTotalPrice() < inOrder.getTotalPrice();
+}
+
+bool operator>{
+        return getTotalPrice() > inOrder.getTotalPrice();
+}
+ */

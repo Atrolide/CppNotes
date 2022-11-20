@@ -7,6 +7,8 @@
 class CarData {
 
 private:
+
+
     std::string regNum;
     std::string carBrand;
 

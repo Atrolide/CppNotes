@@ -91,7 +91,7 @@ int &CarData::operator[](int subscript) {
 //SHIFT OPERATOR OVERLOADING DEFINITION
 std::ostream &operator<<(std::ostream &result, const CarData &someCar) {
     int iterator = 0;
-    result << "Car: " << someCar.carBrand << " " << someCar.regNum << "\n";
+   result << "Car: " << someCar.carBrand << " " << someCar.regNum << "\n";
     for (int i = 0; i < someCar.customers.size(); i++) {
         result << i + 1 << ". " << someCar.customers[i] << ", " << someCar.hoursRented[i] << "\n";
         iterator += someCar.hoursRented[i];
@@ -99,6 +99,7 @@ std::ostream &operator<<(std::ostream &result, const CarData &someCar) {
     result << "Total time: " << iterator << " hours\n";
     return result;
 }
+
 
 
 

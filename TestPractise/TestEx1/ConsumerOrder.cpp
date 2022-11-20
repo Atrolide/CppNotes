@@ -15,7 +15,7 @@ ConsumerOrder::ConsumerOrder(const ConsumerOrder &someCustomer) {
 }
 
 ConsumerOrder::~ConsumerOrder() {
-    std::cout << "Dish number " << " has been destroyed" << std::endl;
+    std::cout << "Order number " << " has been destroyed" << std::endl;
 }
 
 void ConsumerOrder::setCustomer(std::string cName) {
@@ -53,10 +53,35 @@ int ConsumerOrder::length() {
     return dishName.size();
 }
 
-bool ConsumerOrder::operator>(const ConsumerOrder &someDish) {
-    for (int i = 0; i < dishPrice.size(); ++i) {
-        total += dishPrice[i];
+int ConsumerOrder::getTotalPrice() const {
+    int total{0};
+    for(auto element : dishPrice){
+        total += element;
     }
-    if ( > ) return true;
+    return total;
+}
+
+bool ConsumerOrder::operator>(const ConsumerOrder &someDish) {
+    if (this->getTotalPrice() > someDish.getTotalPrice()) return true;
     else return false;
 }
+
+int &ConsumerOrder::operator[](int subscript) {
+    if (subscript > dishPrice.size()) {
+        throw std::out_of_range("Out of range expression!");
+    } else
+        return dishPrice[subscript - 1];
+}
+
+std::ostream &operator<<(std::ostream &result, const ConsumerOrder &someCustomer) {
+    result << "Customer: " << someCustomer.customerName << "\n";
+    for (int i = 0; i < someCustomer.dishName.size(); i++) {
+        result << i + 1 << ". " << someCustomer.dishName[i] << ", " << someCustomer.dishPrice[i] << "\n";
+    }
+    result << "Total price: " << someCustomer.getTotalPrice();
+    return result;
+}
+
+
+
+
