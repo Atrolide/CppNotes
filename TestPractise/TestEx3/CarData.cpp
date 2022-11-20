@@ -40,7 +40,6 @@ std::string CarData::getBrand() {
 
 //ADD RENTAL METHOD DEFINITION
 void CarData::addRental(std::string customerName, int rentTime) {
-
     customers.push_back(customerName);
     hoursRented.push_back(rentTime);
 }

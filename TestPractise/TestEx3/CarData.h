@@ -12,7 +12,6 @@ private:
 
     std::vector<std::string> customers;
     std::vector<int> hoursRented;
-    std::vector<int> rentCount;
 
 public:
     //DEFAULT CONSTRUCTOR DECLARATION
