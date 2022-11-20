@@ -20,7 +20,7 @@ int main() {
     std::cout << BMW.getRegNum() << std::endl;
 
     std::cout << "BMW rent time on position is: " << BMW.operator[](5) << std::endl;
-    std::cout << "Toyota rent time on position is: " << Toyota.operator[](20) << std::endl;
+    std::cout << "Toyota rent time on position is: " << Toyota.operator[](2) << std::endl;
 
     std::cout << "\n";
 

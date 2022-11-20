@@ -3,11 +3,12 @@
 
 ConsumerOrder::ConsumerOrder(std::string cName) {
     customerName = cName;
+//    orderNum++;
+//    customerID = orderNum;
 }
 
 ConsumerOrder::ConsumerOrder(const ConsumerOrder &someCustomer) {
     customerName = someCustomer.customerName;
-
     for (int i = 0; i < someCustomer.dishName.size(); i++) {
         dishName.push_back(someCustomer.dishName[i]);
         dishPrice.push_back(someCustomer.dishPrice[i]);
@@ -55,7 +56,7 @@ int ConsumerOrder::length() {
 
 int ConsumerOrder::getTotalPrice() const {
     int total{0};
-    for(auto element : dishPrice){
+    for (auto element: dishPrice) {
         total += element;
     }
     return total;
@@ -74,7 +75,7 @@ int &ConsumerOrder::operator[](int subscript) {
 }
 
 std::ostream &operator<<(std::ostream &result, const ConsumerOrder &someCustomer) {
-    result << "Customer: " << someCustomer.customerName << "\n";
+    result << "Customer number " << /*someCustomer.customerID << */": " << someCustomer.customerName << "\n";
     for (int i = 0; i < someCustomer.dishName.size(); i++) {
         result << i + 1 << ". " << someCustomer.dishName[i] << ", " << someCustomer.dishPrice[i] << "\n";
     }
