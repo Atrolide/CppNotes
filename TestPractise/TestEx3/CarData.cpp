@@ -40,9 +40,9 @@ std::string CarData::getBrand() {
 
 //ADD RENTAL METHOD DEFINITION
 void CarData::addRental(std::string customerName, int rentTime) {
+
     customers.push_back(customerName);
     hoursRented.push_back(rentTime);
-
 }
 
 //REMOVE RENTAL DEFINITION
@@ -100,6 +100,10 @@ std::ostream &operator<<(std::ostream &result, const CarData &someCar) {
     result << "Total time: " << iterator << " hours\n";
     return result;
 }
+
+
+
+
 
 
 

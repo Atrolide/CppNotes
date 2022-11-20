@@ -6,6 +6,7 @@ int main() {
     CarData BMW("EZG1337", "BMW E36");
     CarData Toyota("EL12345", "Toyota Corolla");
 
+
     BMW.addRental("Customer One", 4);
     BMW.addRental("Customer Two", 1);
     BMW.addRental("Customer Three", 2);

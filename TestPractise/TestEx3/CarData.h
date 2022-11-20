@@ -12,6 +12,7 @@ private:
 
     std::vector<std::string> customers;
     std::vector<int> hoursRented;
+    std::vector<int> rentCount;
 
 public:
     //DEFAULT CONSTRUCTOR DECLARATION
@@ -50,5 +51,6 @@ public:
     //SHIFT OPERATOR OVERLOADING DECLARATION
     friend std::ostream &operator<<(std::ostream &, const CarData &);
 };
+
 
 #endif //TESTEX3_CARDATA_H
