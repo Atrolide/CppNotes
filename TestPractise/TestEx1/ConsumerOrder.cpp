@@ -53,4 +53,10 @@ int ConsumerOrder::length() {
     return dishName.size();
 }
 
-
+bool ConsumerOrder::operator>(const ConsumerOrder &someDish) {
+    for (int i = 0; i < dishPrice.size(); ++i) {
+        total += dishPrice[i];
+    }
+    if ( > ) return true;
+    else return false;
+}
