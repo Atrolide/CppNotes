@@ -1,4 +1,4 @@
-*Object Oriented exercises
+* Object Oriented exercises
 
 1. Creating classes and objects<br>
 2. Constructors, copy-constructors and destructors<br> 
