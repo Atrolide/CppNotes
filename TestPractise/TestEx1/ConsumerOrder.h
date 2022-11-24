@@ -8,8 +8,8 @@
 class ConsumerOrder {
 
 private:
-//    int orderNum{0};
-//    int customerID;
+ static int orderNum;
+ int customerID;
 
     std::string customerName;
     std::vector<std::string> dishName;
@@ -44,15 +44,3 @@ public:
 };
 
 #endif //TESTEX1_CONSUMERORDER_H
-
-
-/*
-
-bool operator<(const order& inOrder){
-    return getTotalPrice() < inOrder.getTotalPrice();
-}
-
-bool operator>{
-        return getTotalPrice() > inOrder.getTotalPrice();
-}
- */

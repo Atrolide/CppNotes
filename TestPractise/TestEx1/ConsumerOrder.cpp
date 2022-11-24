@@ -3,8 +3,8 @@
 
 ConsumerOrder::ConsumerOrder(std::string cName) {
     customerName = cName;
-//    orderNum++;
-//    customerID = orderNum;
+   orderNum++;
+   customerID = orderNum;
 }
 
 ConsumerOrder::ConsumerOrder(const ConsumerOrder &someCustomer) {
@@ -75,7 +75,7 @@ int &ConsumerOrder::operator[](int subscript) {
 }
 
 std::ostream &operator<<(std::ostream &result, const ConsumerOrder &someCustomer) {
-    result << "Customer number " << /*someCustomer.customerID << */": " << someCustomer.customerName << "\n";
+    result << "Customer number " << someCustomer.customerID << ": " << someCustomer.customerName << "\n";
     for (int i = 0; i < someCustomer.dishName.size(); i++) {
         result << i + 1 << ". " << someCustomer.dishName[i] << ", " << someCustomer.dishPrice[i] << "\n";
     }
